@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+}
+
+.main-con {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.left {
+  background-color: lightblue;
+  float: left;
+}
+
+.right {
+  background-color: lightgreen;
+  float: right;
+}
+
+textarea {
+  width: 90%;
+  height: 30vh;
+  border-radius: 13px;
+}
+
+#Btn_pause_play {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  gap: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+}
+#Btn_pause_play:hover {
+  box-shadow: 0px 0px 2px 5px rgb(58, 57, 57);
+}
+
+#Btn_play {
+  display: none;
+}
+
+#Btn_Stop1,
+#Btn_Stop2 {
+  margin-top: 20px;
+  display: none;
+  color: red;
+  font-weight: bolder;
+}
+#StartBtn1,
+#StartBtn2 {
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+
+  border: none;
+}
+#StartBtn1:hover,
+#StartBtn2:hover {
+  font-weight: 15px;
+  box-shadow: 0px 0px 2px 4px grey;
+}
+
+#speaker_On,
+#speaker_of {
+  display: none;
+}
+#Un_mute,
+#Mute {
+  display: none;
+}
+.msg {
+  display: none;
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: yellow;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="voice.css" />
+    <script src="voice.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main-con">
+      <div class="msg">
+        <p></p>
+      </div>
+      <div id="Btn_pause_play">
+        <i id="Btn_pause" class="fa-solid fa-pause"></i>
+        <i id="Btn_play" class="fa-solid fa-play"></i>
+      </div>
+      <div class="left">
+        <h1>Voice to Text</h1>
+        <i id="Mute" class="fa-solid fa-microphone"></i>
+        <i id="Un_mute" class="fa-solid fa-microphone-slash"></i>
+        <textarea
+          type="text"
+          name="Voice"
+          id="voice"
+          cols="25"
+          rows="10"
+          disabled
+        ></textarea>
+        <i id="Btn_Stop1" class="fa-solid fa-stop"></i>
+        <button id="StartBtn1">Start</button>
+      </div>
+      <div class="right">
+        <h1>Text to Voice</h1>
+        <i id="speaker_On" class="fa-solid fa-volume-high"></i>
+        <i id="speaker_of" class="fa-solid fa-volume-xmark"></i>
+        <textarea type="texts" id="texts" cols="30" rows="10"></textarea>
+        <i id="Btn_Stop2" class="fa-solid fa-stop"></i>
+        <button id="StartBtn2">Start</button>
+      </div>
+    </div>
+  </body>
+</html>
